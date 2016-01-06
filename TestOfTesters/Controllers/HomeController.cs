@@ -13,7 +13,7 @@ namespace TestOfTesters.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Instructions()
         {
             ViewBag.Message = "Your application description page.";
 
