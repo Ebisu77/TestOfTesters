@@ -12,8 +12,13 @@ namespace TestOfTesters.Controllers
         public ActionResult TestForm()
         {
             return View();
-        }       
+        }
+        
+        [HttpPost]
+        public ActionResult ProcessForm()
+        {
 
-
+            return View();
+        }
     }
 }
