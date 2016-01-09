@@ -11,26 +11,27 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2>Class Validation Form</h2>
+                <form role="form" method="post" action="/Form/TestForm">
 
-                @using (Html.BeginForm("ProcessForm", "Form", FormMethod.Post, new { @class = "TestForm" })){
-                <form >
-                    
                     <div class="form-group">
-                        <label for="FirstName">name</label>
-                        <input type="text" class="form-control" id="FirstName">
+                        <label for="FirstName">First name</label>
+                        <input type="text" class="form-control" id="FirstName" name="FirstName" value="" required="required" maxlength="35">
                     </div>
                     <div class="form-group">
-                        <label for="MiddleName">name</label>
-                        <input type="text" class="form-control" id="MiddleName">
+                        <label for="MiddleName">Middle name</label>
+                        <input type="text" class="form-control" id="MiddleName" name="MiddleName" value="" maxlength="35">
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <label for="LastName">Last name</label>
+                        <input type="text" class="form-control" id="LastName" name="LastName" value="" required="required" maxlength="35">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" id="Submit" value="submit">Submit</button>
                     </div>
                 </form>
-                }
 
             </div>
-        </div>    
+        </div>
     </div>
 </body>
 

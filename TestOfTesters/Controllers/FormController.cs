@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TestOfTesters.Models;
 
 namespace TestOfTesters.Controllers
 {
@@ -15,10 +16,10 @@ namespace TestOfTesters.Controllers
         }
         
         [HttpPost]
-        public ActionResult ProcessForm()
-        {
+        public ActionResult TestForm(FormModel myModel)
+        {           
 
-            return View();
+            return View("ProcessForm",myModel);
         }
     }
 }

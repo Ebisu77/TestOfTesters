@@ -13,6 +13,12 @@ namespace TestOfTesters
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //routes.MapRoute(
+            //    "ProcessForm",
+            //    "Form/ProcessForm", 
+            //    new { controller = "Form", action = "ProcessForm" }
+            //    );
+
             routes.MapRoute(
                 "Form", 
                 "Form", 
