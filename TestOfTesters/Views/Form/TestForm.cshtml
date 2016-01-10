@@ -12,7 +12,7 @@
         <h2 class="text-center">Teacher Validation Form</h2>
         <br />
         <form role="form" method="post" action="/Form/TestForm">
-            <div class="form-inline" draggable="true">
+            <div class="container" draggable="true">
                 <h4>Student Information</h4>
                 <div class="row">
                     <div class="col-sm-4">
@@ -46,38 +46,108 @@
                 <hr />
             </div>
 
-            <div class="form-inline">
+            <div class="container">
                 <h4>Teacher Information</h4>
-                <div class="form-group col-sm-6">
-                    <label for="Faculty">Faculty*</label>
-                    <select class="form-control" id="Faculty" name="Faculty" required="required">
-                        <option></option>
-                        <option value="a">Business School</option>
-                        <option value="b">Faculty of Arts & Sciences</option>
-                        <option value="c">School of Dental Medicine</option>
-                        <option value="d">School of Design</option>
-                        <option value="e">School of Education</option>
-                        <option value="f">School of Engineering & Applied Sciences</option>
-                        <option value="g">Law School</option>
-                        <option value="h">Medical School</option>
-                    </select>
-                </div>
-                <div class="form-group col-sm-6">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="Faculty">Faculty*</label>
+                        <select class="form-control" name="Faculty" required="required">
+                            <option></option>
+                            <option value="a">Business School</option>
+                            <option value="b">Faculty of Arts & Sciences</option>
+                            <option value="c">School of Dental Medicine</option>
+                            <option value="d">School of Design</option>
+                            <option value="e">School of Education</option>
+                            <option value="f">School of Engineering & Applied Sciences</option>
+                            <option value="g">Law School</option>
+                            <option value="h">Medical School</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
                         <label for="TeacherFullName">Teacher name*</label>
                         <input type="text" class="form-control" id="TeacherFullName" name="TeacherFullName" value="" required="required" maxlength="35">
                     </div>
+                </div>
                 <hr />
             </div>
 
+            <div class="container">
+                <h4>Evaluation</h4>
+
+                <div class="container col-md-4">
+
+                    <label title="pokus">Comprehensibility</label>
+                    <div class="btn-group col-xs-12" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="Comprehensibility" value="">1
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="Comprehensibility" value="">2
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="Comprehensibility" value="">3
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="Comprehensibility" value="">4
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="Comprehensibility" value="" >5
+                        </label>
+                    </div>
+                </div>
+                <div class="container col-md-4">
+                    <label>Preparedness</label>
+                    <div class="btn-group col-xs-12" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="radio" name="Preparedness" value="">1
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="Preparedness" value="">2
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="Preparedness" value="">3
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="Preparedness" value="">4
+                        </label>
+                        <label class="btn btn-default disabled">
+                            <input type="radio" name="Preparedness" value="">5
+                        </label>
+                    </div>
+                </div>
+                <div class="container col-md-4">
+                    <label>Punctuality</label>
+                    <div class="btn-group col-xs-12" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="radio" name="Punctuality" value="">1
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="Punctuality" value="">2
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="Punctuality" value="">3
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="Punctuality" value="">4
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="Punctuality" value="">5
+                        </label>
+                    </div>
+                </div>
+            </div>
 
 
+
+
+            <hr />
             <br />
-            <div class="form-group text-center">
-                <button type="submit" class="btn btn-primary" id="Submit" value="submit">Submit</button>
+            <div class="container">
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary" id="Submit" value="submit">Submit</button>
+                </div>
             </div>
         </form>
-
-
     </div>
 </body>
 
