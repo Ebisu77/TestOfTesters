@@ -8,9 +8,15 @@ namespace TestOfTesters.Models
     public class FormModel
     {
         
-        public string FirstName { get; set; }
-        public string MiddleName { get; set; }
-        public string LastName { get; set; }
+        public string StudentFirstName { get; set; }
+        public string StudentMiddleName { get; set; }
+        public string StudentLastName { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public int Age { get; set; }
+        public string YearOfStudy { get; set; }
+
+        public string Faculty { get; set; }
+        public string TeacherFullName { get; set; }
 
     }
 }
