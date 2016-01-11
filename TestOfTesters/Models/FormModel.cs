@@ -8,6 +8,8 @@ namespace TestOfTesters.Models
     public class FormModel
     {
         
+        // This model is intentionally incomplete, only few props are actually used. 
+
         public string StudentFirstName { get; set; }
         public string StudentMiddleName { get; set; }
         public string StudentLastName { get; set; }

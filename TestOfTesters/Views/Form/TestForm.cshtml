@@ -15,32 +15,57 @@
             <div class="container" draggable="true">
                 <h4>Student Information</h4>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <label for="StudentFirstName">First name*</label>
                         <input type="text" class="form-control" id="StudentFirstName" name="StudentFirstName" value="" required="required" maxlength="35">
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <label for="StudentMiddleName">Middle name</label>
                         <input type="text" class="form-control" id="StudentMiddleName" name="StudentMiddleName" value="" maxlength="35">
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <label for="StudentLastName">Last name*</label>
                         <input type="text" class="form-control" id="StudentLastName" name="StudentLastName" value="" required="required" maxlength="35">
                     </div>
                 </div>
                 <br />
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <label for="DateOfBirth">Date of Birth*</label>
                         <input type="date" class="form-control" id="DateOfBirth" name="DateOfBirth" value="" required="required">
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <label for="Age">Age*</label>
                         <input type="number" class="form-control" id="Age" name="Age" value="" required="required" min="0" max="100">
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
+                        <label for="Gender">Gender*</label>
+                        <select class="form-control" name="Gender" required="required">
+                            <option></option>
+                            <option value="a">Male</option>
+                            <option value="b">Female</option>
+                            <option value="c">Other</option>
+                            <option value="d">Prefer not to disclose</option>
+
+                        </select>
+                    </div>
+
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-4">
                         <label for="YearOfStudy">Year of Study*</label>
                         <input type="number" class="form-control" id="YearOfStudy" name="YearOfStudy" value="" required="required" min="0" max="10">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="TypeOfStudy">Type of Study*</label>
+                        <select class="form-control" name="TypeOfStudy" required="required">
+                            <option></option>
+                            <option>Full-time</option>
+                            <option>Part-time</option>
+                            <option>Block mode learning</option>
+                            <option>Distance learning</option>
+                        </select>
                     </div>
                 </div>
                 <hr />
@@ -203,10 +228,8 @@
 
             <div class="container">
                 <fieldset class="form-group">
-                
-                        <label for="Comment">Comment</label>
-                        <textarea class="form-control" id="Comment" name="Comment" rows="5"> </textarea>
-                 
+                    <label for="Comment">Comment</label>
+                    <textarea class="form-control" id="Comment" name="Comment" rows="5"> </textarea>
                 </fieldset>
             </div>
 
