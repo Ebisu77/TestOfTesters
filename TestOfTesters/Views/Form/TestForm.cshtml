@@ -9,23 +9,23 @@
 
     <div class="container">
 
-        <h2 class="text-center" style="font-family:'Comic Sans MS'">Teacher Validation Form</h2>
+        <h2 class="text-center" style="font-family:'Comic Sans MS'">Teacher Validation Form</h2>        
         <br />
-        <form role="form" method="post" action="/Form/TestForm">
+        <form class="col-md-12" role="form" method="post" action="/Form/TestForm">
             <div class="container" draggable="true">
                 <h4>Student Information</h4>
                 <div class="row">
                     <div class="col-md-4">
                         <label for="StudentFirstName">First name*</label>
-                        <input type="text" class="form-control" id="StudentFirstName" name="StudentFirstName" value="" required="required" maxlength="35">
+                        <input type="text" class="form-control" id="StudentFirstName" name="StudentFirstName" value="" required="required" maxlength="25">
                     </div>
                     <div class="col-md-4">
                         <label for="StudentMiddleName">Middle name</label>
-                        <input type="text" class="form-control" id="StudentMiddleName" name="StudentMiddleName" value="" maxlength="35">
+                        <input type="text" class="form-control" id="StudentMiddleName" name="StudentMiddleName" value="" maxlength="25">
                     </div>
                     <div class="col-md-4">
                         <label for="StudentLastName">Last name*</label>
-                        <input type="text" class="form-control" id="StudentLastName" name="StudentLastName" value="" required="required" maxlength="35">
+                        <input type="text" class="form-control" id="StudentLastName" name="StudentLastName" value="" required="required" maxlength="25">
                     </div>
                 </div>
                 <br />
@@ -89,7 +89,7 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label for="TeacherFullName">Teacher name*</label>
-                        <input type="text" class="form-control" id="TeacherFullName" name="TeacherFullName" value="" required="required" maxlength="35">
+                        <input type="text" class="form-control" id="TeacherFullName" name="TeacherFullName" value="" required="required" maxlength="25">
                     </div>
                 </div>
                 <hr />
@@ -231,10 +231,12 @@
                     <textarea class="form-control" id="Comment" name="Comment" rows="5"> </textarea>
                 </fieldset>
             </div>
+            
 
-            <hr />
+            
             <br />
             <div class="container">
+                <hr />
                 <div class="checkbox">
                     <label>
                         <input type="checkbox">
