@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - Rare Crew Test</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <meta name="description" content="The description of my page" />
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -16,7 +17,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Rare Crew Test", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a href='@Url.Action("Index", "Home")'>
+                    <img src='@Url.Content("~/Content/img_logo.png")' />
+                </a>
+
+
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -32,7 +37,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Rare Crew</p>
+            <p>&copy; @DateTime.Now.Year - Rare Crew s.r.o.</p>
         </footer>
     </div>
 
