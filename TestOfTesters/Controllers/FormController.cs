@@ -17,7 +17,22 @@ namespace TestOfTesters.Controllers
         
         [HttpPost]
         public ActionResult TestForm(FormModel myModel)
-        {           
+        {
+
+            // mess with view if middle name have not been specified
+            string middleNameTemp;
+
+            if (myModel.StudentMiddleName == null)
+            {
+                // string saying null intentionally
+                middleNameTemp = "null";
+            }
+            else
+            {
+                middleNameTemp = myModel.StudentMiddleName;
+            }
+
+            myModel.FullName = myModel.StudentFirstName + " " + middleNameTemp + " " + myModel.StudentLastName;
 
             return View("ProcessForm",myModel);
         }
