@@ -7,9 +7,10 @@
 
 <body>
 
-
+    <br />
     <h2 class="text-center" style="font-family:'Comic Sans MS'">Teacher Validation Form</h2>
     <br />
+
     <form role="form" method="post" action="/Form/TestForm">
         <div class="container" draggable="true">
             <h4>Student Information</h4>
@@ -52,7 +53,7 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    <label for="YearOfStudy">Year of Study*</label>
+                    <label for="YearOfStudy">YearOfStudy*</label>
                     <input type="number" class="form-control" id="YearOfStudy" name="YearOfStudy" value="" required="required" min="0" max="10">
                 </div>
                 <div class="col-md-4">
@@ -132,7 +133,7 @@
                         <label class="btn btn-default">
                             <input type="radio" name="Preparedness" value="">4
                         </label>
-                        <label class="btn btn-default disabled">
+                        <label class="btn btn-default">
                             <input type="radio" name="Preparedness" value="">5
                         </label>
                     </div>
@@ -163,7 +164,7 @@
                 <div class="container col-md-4">
                     <label title="Rate teacher’s relationships with students">Expertise</label>
                     <div class="btn-group col-xs-12" data-toggle="buttons">
-                        <label class="btn btn-default">
+                        <label class="btn btn-default active">
                             <input type="radio" name="Expertise" value="">1
                         </label>
                         <label class="btn btn-default">
@@ -195,7 +196,7 @@
                         <label class="btn btn-default">
                             <input type="radio" name="Attitude" value="">4
                         </label>
-                        <label class="btn btn-default">
+                        <label class="btn btn-default disabled">
                             <input type="radio" name="Attitude" value="">5
                         </label>
                     </div>
@@ -231,13 +232,11 @@
             </fieldset>
         </div>
 
-
-
         <br />
         <div class="container">
             <hr />
             <div class="checkbox">
-                <label>
+                <label class="well">
                     <input type="checkbox">
                     I want to be informed about results
                 </label>
