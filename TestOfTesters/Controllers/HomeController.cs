@@ -15,15 +15,13 @@ namespace TestOfTesters.Controllers
 
         public ActionResult Instructions()
         {
-            ViewBag.Message = "Your application description page.";
-
+            
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
+            
             return View();
         }
     }

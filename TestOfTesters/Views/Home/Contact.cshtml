@@ -1,17 +1,38 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<!-- TODO: adresa rarecrew -->
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    Phone: 
-</address>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="container">
+    <h2 style="color: #0645AD; text-decoration: underline" >@ViewBag.Title</h2>
+    <br />
+</div>
+
+<div class="container">
+    <div class="glyphicon glyphicon-map-marker"></div>    
+    <address>
+        Rare Crew s.r.o.<br />
+        Lazaretska 23<br />
+        811 09, Bratislava<br />
+        Slovakia
+    </address>
+</div>
+
+<div class="container">
+    <div class="glyphicon glyphicon-phone"></div>
+    <div>
+        <address>
+            +44 (0) 208 123 6419 (UK) <br />
+            +44 (0) 207 097 1219 (UK) <br />
+            +421 (0) 903 953 577 (SK) <br />
+        </address>
+    </div>
+</div>
+
+<div class="container">
+    <div class="glyphicon glyphicon-envelope"></div>
+    <address>
+        <strong>Info:</strong> <a href="mailto:info@rarecrew.com">info@rarecrew.com</a><br />
+        <strong>Support:</strong>   <a href="mailto:support@rarecrew.com">support@rarecrew.com</a><br />
+    </address>
+</div>
