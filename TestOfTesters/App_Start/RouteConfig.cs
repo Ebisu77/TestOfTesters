@@ -14,10 +14,10 @@ namespace TestOfTesters
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                "Form", 
-                "Form", 
-                new { controller = "Form", action = "TestForm"}
-                );            
+                "Form",
+                "TestFoorm",
+                new { controller = "Form", action = "TestForm" }
+                );
 
             routes.MapRoute(
                 name: "Default",
