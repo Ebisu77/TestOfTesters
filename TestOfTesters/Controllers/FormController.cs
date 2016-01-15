@@ -32,6 +32,7 @@ namespace TestOfTesters.Controllers
                 middleNameTemp = myModel.StudentMiddleName;
             }
 
+            // crate full name in model
             myModel.FullName = myModel.StudentFirstName + " " + middleNameTemp + " " + myModel.StudentLastName;
 
             return View("ProcessForm",myModel);

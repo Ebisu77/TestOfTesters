@@ -7,9 +7,9 @@ namespace TestOfTesters.Models
 {
     public class FormModel
     {
-        // This model is intentionally incomplete, only few props are actually used for some logic. 
+        // this model is intentionally incomplete, only few props are actually used for some logic. 
 
-        // Used section
+        // used section
         private string fullName;       
 
         public string StudentFirstName { get; set; }
@@ -21,7 +21,7 @@ namespace TestOfTesters.Models
             set { fullName = value; }
         }
 
-        // Yet unused prop pool
+        // some yet unused props for future changes
         public DateTime DateOfBirth { get; set; }
         public int Age { get; set; }
         public int YearOfStudy { get; set; }
