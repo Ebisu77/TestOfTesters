@@ -30,7 +30,7 @@
 - Form: Sumbit instead of Submit 
 - Form: Part=time in the type of study
 - Form: Medicall in the Faculty dropdown (2xL)
-- Form: Student information vs Teacher informations (incorrect plural)
+- Form: Student informations vs Teacher information (incorrect plural)
 - Form: School of design has “.” at the end
 
 ##Logical Mistakes: 
